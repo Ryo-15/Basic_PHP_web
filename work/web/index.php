@@ -1,6 +1,6 @@
 <?php
 
-$today = date('Y-m-d H:i:s l');
+$name = 'Taro <script>alert(1);</script>';
 
 ?>
 <!DOCTYPE html>
@@ -10,10 +10,7 @@ $today = date('Y-m-d H:i:s l');
   <title>PHP Practice</title>
 </head>
 <body>
-  <p>Hello, PHP!</p>
-  <p>Today: <?php echo date('Y-m-d H:i:s l'); ?></p>
-  <!-- 上記の短縮記法↓ -->
-  <p>Today: <?= date('Y-m-d H:i:s l'); ?></p>
-  <p>Today: <?= $today; ?></p>
+  <p>Hello, <?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>!</p>
+  
 </body>
 </html>
