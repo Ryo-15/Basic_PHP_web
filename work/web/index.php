@@ -7,7 +7,11 @@ include('../app/_parts/_header.php');
 ?>
 
 <form action="result.php" method="get">
-  <textarea name="message" id="" cols="30" rows="10"></textarea>
+  <select name="color" id="">
+    <option value="orange">Orange</option>
+    <option value="pink">Pink</option>
+    <option value="gold">Gold</option>
+  </select>
   <button>Send</button>
 </form>
 
