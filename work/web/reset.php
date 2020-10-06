@@ -1,6 +1,6 @@
 <?php
 
-require('../app/funsctions.php');
+require('../app/functions.php');
 
 unset($_SESSION['color']);
 
